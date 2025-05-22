@@ -1,17 +1,88 @@
-<!--
-Exercício 4 – Lista e Pseudo-Classes
-Crie uma lista (<ul>) com 5 itens e use CSS para:
-- Deixar o primeiro item em negrito (:first-child).
-- Deixar o último item em itálico (:last-child).
--->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Exercício 4</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista e Pseudo-Classes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        
+        ul li {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        ul li:last-child {
+            border-bottom: none;
+        }
+        
+        ul li:first-child {
+            font-weight: bold;
+        }
+        
+        ul li:last-child {
+            font-style: italic;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-
+    <div class="container">
+        <h1>Lista e Pseudo-Classes</h1>
+        
+        <ul>
+            <li>Primeiro item - Este é o primeiro item da lista e está em negrito devido à pseudo-classe :first-child.</li>
+            <li>Segundo item - Este é o segundo item da lista.</li>
+            <li>Terceiro item - Este é o terceiro item da lista.</li>
+            <li>Quarto item - Este é o quarto item da lista.</li>
+            <li>Último item - Este é o último item da lista e está em itálico devido à pseudo-classe :last-child.</li>
+        </ul>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

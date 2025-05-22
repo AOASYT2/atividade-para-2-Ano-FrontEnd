@@ -1,17 +1,67 @@
-<!--
-Exercício 1 – Estrutura com div e section
-Crie uma página com uma <div> principal que contenha duas <section>:
-- A primeira com um título (<h2>) e um parágrafo (<p>).
-- A segunda com uma lista de 3 itens.
--->
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Exercício 1</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura com div e section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body>
-ex1
+    <div class="container">
+        <h1>Estrutura HTML com div e section</h1>
+        
+        <section>
+            <h2>Sobre</h2>
+            <p>Esta é a primeira seção da página. Ela contém um título e um parágrafo explicativo sobre o propósito desta estrutura HTML. As seções ajudam a organizar o conteúdo de forma lógica e semântica, tornando o código mais fácil de entender e manter.</p>
+        </section>
+        
+        <section>
+            <h2>Itens Importantes</h2>
+            <ul>
+                <li>Primeiro item da lista - Este item representa um elemento importante que deve ser considerado.</li>
+                <li>Segundo item da lista - Este item complementa a informação fornecida pelo primeiro item.</li>
+                <li>Terceiro item da lista - Este item completa a lista de itens importantes para este exemplo.</li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>

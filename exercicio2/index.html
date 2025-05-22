@@ -1,17 +1,72 @@
-<!--
-Exercício 2 – Cabeçalho e Rodapé
-Crie uma página com:
-- Um <header> com um <h1> e uma imagem.
-- Um <footer> com um texto de rodapé centralizado.
--->
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Exercício 2</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabeçalho e Rodapé</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        header img {
+            width: 200px;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        main {
+            min-height: 400px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-
+    <header>
+        <h1>Meu Site</h1>
+        <img src="https://picsum.photos/seed/site-header/400/200.jpg" alt="Imagem de Cabeçalho">
+    </header>
+    
+    <main>
+        <p>Este é o conteúdo principal da página. O cabeçalho e o rodapé foram criados conforme solicitado no exercício.</p>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
